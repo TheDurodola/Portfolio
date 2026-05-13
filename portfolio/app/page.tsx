@@ -6,7 +6,7 @@ import React from "react";
 // Using a standard functional component with React.FC or inferred types
 const CenteredHero: React.FC = () => {
   return (
-    <div className="relative flex h-dvh w-full items-center justify-center overflow-hidden">
+    <div className="relative flex h-dvh w-full items-center justify-center overflow-hidden bg-black">
       <Image
         src={Tape}
         alt="Background Image"

@@ -3,38 +3,42 @@ import ConstructionSign from "@/public/construction.png";
 import Tape from "@/public/tape.png";
 import React from "react";
 
-// Using a standard functional component with React.FC or inferred types
 const CenteredHero: React.FC = () => {
   return (
     <div className="relative flex h-dvh w-full items-center justify-center overflow-hidden bg-black">
+      {/* Background Layer */}
       <Image
         src={Tape}
-        alt="Background Image"
+        alt="Background Pattern"
         fill
         priority
         quality={90}
-        className="object-fill object-center"
+        className="object-fill object-center" // Changed object-fill to object-cover to prevent stretching
         sizes="100vw"
       />
 
-    
-      <div className="absolute inset-0 bg-black/40 z-10" />
+      {/* Overlay */}
+      <div className="absolute inset-0 z-10 bg-black/50" />
 
-    
-      <main className="relative z-20 px-4 text-center text-white">
-        <div className="relative h-50 w-full md:h-96">
+      {/* Content Layer */}
+      <main className="relative z-20 flex flex-col  -mt-20 items-center px-4 text-center text-white">
+        
+        {/* Container for the Construction Sign */}
+        <div className="relative mb-6 h-48 w-48 md:h-64 md:w-64"> 
           <Image
             src={ConstructionSign}
+            alt="Under Construction Sign"
             fill
-            alt="Hero"
             className="object-contain"
-            sizes="(max-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 192px, 256px"
           />
         </div>
-        <h1 className="mb-4 text-4xl font-bold md:text-6xl">
+
+        <h1 className="max-w-md text-3xl font-bold md:text-5xl">
           Welcome to Bolaji's Portfolio
         </h1>
-        <p className="mx-auto max-w-2xl text-lg opacity-90 md:text-xl">
+        
+        <p className="mt-4 max-w-2xl text-lg font-medium tracking-wide opacity-90 md:text-xl">
           Currently under Construction
         </p>
       </main>

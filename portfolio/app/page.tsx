@@ -17,6 +17,8 @@ const CenteredHero: React.FC = () => {
         sizes="100vw"
       />
 
+    
+
       {/* Overlay */}
       <div className="absolute inset-0 z-10 bg-black/50" />
 
@@ -24,7 +26,7 @@ const CenteredHero: React.FC = () => {
       <main className="relative z-20 flex flex-col  -mt-20 items-center px-4 text-center text-white">
         
         {/* Container for the Construction Sign */}
-        <div className="relative mb-6 h-48 w-48 md:h-64 md:w-64"> 
+        <div className="relative mb-6 h-48 w-48 md:h-64 md:w-70"> 
           <Image
             src={ConstructionSign}
             alt="Under Construction Sign"
@@ -34,7 +36,7 @@ const CenteredHero: React.FC = () => {
           />
         </div>
 
-        <h1 className="max-w-md text-3xl font-bold md:text-5xl">
+        <h1 className="max-w-md text-2xl font-bold md:text-4xl">
           Welcome to Bolaji's Portfolio
         </h1>
         

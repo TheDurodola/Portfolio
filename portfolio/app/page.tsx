@@ -2,15 +2,11 @@ import Image from "next/image";
 import ConstructionSign from "@/public/construction.png";
 import Tape from "@/public/tape.png";
 import React from "react";
-import { Analytics } from '@vercel/analytics/next';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 const CenteredHero: React.FC = () => {
   return (
-    <div className="relative flex h-dvh w-full items-center justify-center overflow-hidden bg-black">
-      <Analytics></Analytics>
-      <SpeedInsights></SpeedInsights>
-      Speed
+    <div className="relative flex h-dvh w-full  items-center justify-center  bg-black">
       {/* Background Layer */}
       <Image
         src={Tape}

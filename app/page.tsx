@@ -1,52 +1,44 @@
-import Image from "next/image";
-import ConstructionSign from "@/public/construction.png";
-import Tape from "@/public/tape.png";
-import React from "react";
+import ContactSection from "@/components/sections/contact-section";
+import ExperienceSection from "@/components/sections/experience-section";
+import HeroSection from "@/components/sections/hero-section";
+import ProjectsSection from "@/components/sections/projects-section";
+import QuoteSection from "@/components/sections/quote-section";
+import SiteFooter from "@/components/site-footer";
+import SiteHeader from "@/components/site-header";
+import ToolsSection from "@/components/sections/tools-section";
 
-
-const CenteredHero: React.FC = () => {
+export default function Home() {
   return (
-    <div className="relative flex h-dvh w-full  items-center justify-center  bg-black">
-      {/* Background Layer */}
-      <Image
-        src={Tape}
-        alt="Background Pattern"
-        fill
-        priority
-        quality={90}
-        className="object-fill object-center" // Changed object-fill to object-cover to prevent stretching
-        sizes="100vw"
-      />
+    <main className="relative flex min-h-dvh flex-col overflow-x-hidden bg-background text-foreground">
+      <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-8 sm:px-10 lg:px-12">
+        <SiteHeader />
+        <HeroSection />
+      </div>
 
-    
+      <QuoteSection firstLine="YOU DESCRIBE" secondLine="I ENGINEER" />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 z-10 bg-black/50" />
+      <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-16 sm:px-10 lg:px-12">
+        <ExperienceSection />
+      </div>
 
-      {/* Content Layer */}
-      <main className="relative z-20 flex flex-col  -mt-20 items-center px-4 text-center text-white">
-        
-        {/* Container for the Construction Sign */}
-        <div className="relative mb-6 h-48 w-48 md:h-64 md:w-70"> 
-          <Image
-            src={ConstructionSign}
-            alt="Under Construction Sign"
-            fill
-            className="object-contain"
-            sizes="(max-width: 768px) 192px, 256px"
-          />
-        </div>
+      <QuoteSection firstLine="YOU DESCRIBE" secondLine="I ENGINEER" />
 
-        <h1 className="max-w-md text-2xl font-bold md:text-4xl">
-          Welcome to Bolaji's Portfolio
-        </h1>
-        
-        <p className="mt-4 max-w-2xl text-lg font-medium tracking-wide opacity-90 md:text-xl">
-          Currently under Construction
-        </p>
-      </main>
-    </div>
+      <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-16 sm:px-10 lg:px-12">
+        <ProjectsSection />
+      </div>
+
+      <QuoteSection firstLine="CLEAN ARCHITECTURE" secondLine="PLAN FIRST" />
+
+      <div className="pt-16">
+        <ToolsSection />
+      </div>
+
+      <QuoteSection firstLine="YOU DESCRIBE" secondLine="I ENGINEER" />
+
+      <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-16 pb-8 sm:px-10 lg:px-12">
+        <ContactSection />
+        <SiteFooter />
+      </div>
+    </main>
   );
-};
-
-export default CenteredHero;
+}

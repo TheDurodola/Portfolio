@@ -10,11 +10,8 @@ export default function ExperienceSection() {
   return (
     <section className="pb-16">
       <div className="mb-6">
-        <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-          Experience
-        </p>
         <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-          Experience snapshot
+          EXPERIENCE
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
           The themes that guide how I build and communicate.

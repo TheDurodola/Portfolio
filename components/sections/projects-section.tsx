@@ -25,11 +25,8 @@ export default function ProjectsSection() {
   return (
     <section className="pb-16">
       <div className="mb-6">
-        <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-          Projects
-        </p>
         <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-          Selected work
+          PROJECTS
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
           A few examples of the kind of backend and cloud-oriented work I enjoy

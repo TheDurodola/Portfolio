@@ -74,11 +74,8 @@ export default function ToolsSection() {
   return (
     <section className="w-full pb-16">
       <div className="mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-12 mb-6">
-        <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
-          Tools
-        </p>
         <h2 className="mt-2 text-2xl font-semibold tracking-tight">
-          Tools I use to ship work
+          Tools
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
           A compact view of the tools that show up most often in my workflow.

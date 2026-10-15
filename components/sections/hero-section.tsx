@@ -31,21 +31,7 @@ export default function HeroSection() {
           observability, and shipping real value.
         </p>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-3">
-          {stats.map(([label, detail]) => (
-            <div
-              key={label}
-              className="rounded-none border border-border/70 bg-card/60 p-4 backdrop-blur"
-            >
-              <p className="text-sm font-medium uppercase tracking-[0.25em] text-[#8b1e3f]">
-                {label}
-              </p>
-              <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                {detail}
-              </p>
-            </div>
-          ))}
-        </div>
+        
       </div>
 
       <div className="grid h-full gap-6 self-stretch">

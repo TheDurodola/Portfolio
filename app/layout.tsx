@@ -16,10 +16,19 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Durodola Abolaji Toliat - Software Engineer",
-  description: "Software Engineer specializing in backend developement and distributed systems",
+  description:
+    "Backend engineer focused on APIs, distributed systems, and cloud-aware delivery.",
   authors: [{ name: 'Durodola Abolaji Toliat' }],
-  keywords: [ 'Software Engineer', 'Backend Developer', 'Distributed Systems', 'Java',
-     'Golang', 'Microservices', 'Monolith', 'Cloud Computing', 'AWS', 'Docker' ],
+  keywords: [
+    'Software Engineer',
+    'Backend Developer',
+    'Distributed Systems',
+    'Cloud Engineering',
+    'APIs',
+    'Microservices',
+    'Docker',
+    'AWS',
+  ],
 };
 export default function RootLayout({
   children,

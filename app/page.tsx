@@ -10,30 +10,52 @@ import ToolsSection from "@/components/sections/tools-section";
 export default function Home() {
   return (
     <main className="relative flex min-h-dvh flex-col overflow-x-hidden bg-background text-foreground">
-      <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-8 sm:px-10 lg:px-12">
+      <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-6 sm:px-10 lg:px-12">
         <SiteHeader />
         <HeroSection />
       </div>
 
-      <QuoteSection firstLine="YOU DESCRIBE" secondLine="I ENGINEER" />
+      <QuoteSection
+        firstLine="YOU DESCRIBE"
+        secondLine="I ENGINEER"
+        bgClassName="bg-[#790D16]"
+        textClassName="text-[#F5EFE1]"
+      />
 
       <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-16 sm:px-10 lg:px-12">
         <ExperienceSection />
       </div>
 
-      <QuoteSection firstLine="YOU DESCRIBE" secondLine="I ENGINEER" />
+      <QuoteSection
+        firstLine="YOU DESCRIBE"
+        secondLine="I ENGINEER"
+        direction="reverse"
+        bgClassName="bg-[#AEC4D4]"
+        textClassName="text-[#F5EFE1]"
+      />
 
       <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-16 sm:px-10 lg:px-12">
         <ProjectsSection />
       </div>
 
-      <QuoteSection firstLine="CLEAN ARCHITECTURE" secondLine="PLAN FIRST" />
+      <QuoteSection
+        firstLine="CLEAN ARCHITECTURE"
+        secondLine="PLAN FIRST"
+        bgClassName="bg-[#790D16]"
+        textClassName="text-[#F5EFE1]"
+      />
 
       <div className="pt-16">
         <ToolsSection />
       </div>
 
-      <QuoteSection firstLine="YOU DESCRIBE" secondLine="I ENGINEER" />
+      <QuoteSection
+        firstLine="YOU DESCRIBE"
+        secondLine="I ENGINEER"
+        direction="reverse"
+        bgClassName="bg-[#AEC4D4]"
+        textClassName="text-[#F5EFE1]"
+      />
 
       <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-16 pb-8 sm:px-10 lg:px-12">
         <ContactSection />

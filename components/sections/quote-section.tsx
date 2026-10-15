@@ -1,14 +1,8 @@
 "use client";
 
 import { useRef } from "react";
-import { Anton } from "next/font/google";
 import { motion, useScroll, useTransform } from "motion/react";
 import { cn } from "@/lib/utils";
-
-const anton = Anton({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 export type ScrollDirection =
   | "left-to-right"
@@ -37,9 +31,9 @@ export interface QuoteSectionProps {
   secondLineDirection?: ScrollDirection;
   /** Additional classes for the outer <section> element */
   className?: string;
-  /** Background styling class, defaults to signature wine 'bg-[#8b1e3f]' */
+  /** Background styling class, defaults to VoiceBox brand tertiary '#790D16' */
   bgClassName?: string;
-  /** Text color styling class, defaults to 'text-white' */
+  /** Text color styling class, defaults to VoiceBox brand primary '#F5EFE1' */
   textClassName?: string;
 }
 
@@ -61,8 +55,8 @@ export default function QuoteSection({
   firstLineDirection,
   secondLineDirection,
   className,
-  bgClassName = "bg-[#8b1e3f]",
-  textClassName = "text-white",
+  bgClassName = "bg-[#790D16]",
+  textClassName = "text-[#F5EFE1]",
 }: QuoteSectionProps) {
   const containerRef = useRef<HTMLElement>(null);
 
@@ -116,28 +110,27 @@ export default function QuoteSection({
     <section
       ref={containerRef}
       className={cn(
-        "relative flex w-full flex-col justify-center overflow-hidden py-4 select-none sm:py-6 md:py-8",
+        "relative flex w-full flex-col justify-center overflow-hidden border-y-2 border-[#0A0A0A] py-6 select-none sm:py-8 md:py-10",
         bgClassName,
         className
       )}
     >
       <div
         className={cn(
-          "flex w-full flex-col items-center justify-center text-center",
-          anton.className,
+          "flex w-full flex-col items-center justify-center text-center font-heading",
           textClassName
         )}
       >
         <motion.p
           style={{ x: firstX }}
-          className="whitespace-nowrap text-[clamp(4.5rem,17vw,17rem)] uppercase leading-[0.85] tracking-normal"
+          className="whitespace-nowrap text-[clamp(4rem,15vw,14rem)] uppercase leading-[0.88] tracking-[-0.03em]"
         >
           {firstLine}
         </motion.p>
         {secondLine && (
           <motion.p
             style={{ x: secondX }}
-            className="whitespace-nowrap text-[clamp(4.5rem,17vw,17rem)] uppercase leading-[0.85] tracking-normal"
+            className="whitespace-nowrap text-[clamp(4rem,15vw,14rem)] uppercase leading-[0.88] tracking-[-0.03em]"
           >
             {secondLine}
           </motion.p>

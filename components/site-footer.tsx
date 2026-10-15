@@ -8,11 +8,11 @@ export default function SiteFooter() {
           Available for backend-focused work, cloud builds, and product-minded engineering.
         </p>
         <a
-          href="mailto:hello@example.com"
+          href="mailto:bolajidurodola@gmail.com"
           className="inline-flex items-center gap-2 font-bold uppercase tracking-[0.06em] text-[#0A0A0A] border-b-2 border-[#0A0A0A] pb-0.5 transition-colors hover:border-[#EF4444] hover:text-[#EF4444] w-fit"
         >
           <Mail className="h-4 w-4" />
-          <span>hello@example.com</span>
+          <span>bolajidurodola@gmail.com</span>
         </a>
       </div>
 

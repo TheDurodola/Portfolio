@@ -41,7 +41,7 @@ export default function ProjectsSection() {
       <div className="grid gap-6">
         {projects.map((project, index) => (
           <Card
-            key={project.name}
+            key={index}
             variant={index === 0 ? "elevated" : "default"}
             className="p-6 sm:p-8"
           >

@@ -4,9 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function HeroSection() {
   const stats = [
-    ["APIs", "stable contracts and practical service boundaries"],
-    ["Cloud", "deployment awareness and production readiness"],
-    ["Data", "reliable storage, queries, and performance"],
+    ["Design", "stable contracts and practical service boundaries"],
+    ["Build", "deployment awareness and production readiness"],
+    ["Maintain", "reliable storage, queries, and performance"],
   ] as const;
 
   return (
@@ -55,7 +55,7 @@ export default function HeroSection() {
         <Card variant="strong" className="h-full bg-[#FAFAFA] p-6 flex flex-col justify-between">
           <CardContent className="p-0 flex flex-col h-full justify-between">
             <div className="flex items-center justify-between border-b border-[#E5E5E5] pb-3 text-[11px] font-mono uppercase tracking-[0.12em] text-[#525252]">
-              <span>[ FIG. 01 — ARCHIVE ]</span>
+              <span>[ FIG. 01 — THE ENGINEER ]</span>
               <span className="text-[#0A0A0A] font-bold">2026</span>
             </div>
 
@@ -72,7 +72,10 @@ export default function HeroSection() {
 
             <div className="flex items-center justify-between border-t border-[#E5E5E5] pt-3 text-[11px] font-mono text-[#525252]">
               <span>DURODOLA ABOLAJI TOLIAT</span>
-              <span className="font-bold text-[#0A0A0A]">ACTIVE</span>
+              <span className="inline-flex items-center gap-1.5 font-bold text-[#16A34A]">
+                <span className="inline-block h-2 w-2 rounded-full bg-[#16A34A] animate-pulse" />
+                ACTIVE
+              </span>
             </div>
           </CardContent>
         </Card>

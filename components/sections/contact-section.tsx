@@ -7,7 +7,7 @@ export default function ContactSection() {
       <div className="mb-8 border-b-2 border-[#0A0A0A] pb-4">
         <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.12em] text-[#525252]">
           <span className="h-2 w-2 bg-[#EF4444]" />
-          <span>SECTION // 04</span>
+          <span>SECTION // 05</span>
         </div>
         <h2 className="mt-2 font-heading text-3xl sm:text-4xl font-normal tracking-[-0.02em] text-[#0A0A0A]">
           CONTACT ME

@@ -6,12 +6,12 @@ import { motion } from "motion/react";
 
 const tools = [
   {
-    name: "TypeScript",
+    name: "Golang",
     description: "Typed application and service code.",
     icon: Code2,
   },
   {
-    name: "Node.js",
+    name: "Java",
     description: "Server-side runtime for APIs and tooling.",
     icon: TerminalSquare,
   },
@@ -42,6 +42,51 @@ const tools = [
   },
   {
     name: "Backend services",
+    description: "Designing maintainable service boundaries.",
+    icon: ServerCog,
+  },
+  {
+    name: "MongoDB",
+    description: "Designing maintainable service boundaries.",
+    icon: ServerCog,
+  },
+  {
+    name: "Supabase",
+    description: "Designing maintainable service boundaries.",
+    icon: ServerCog,
+  },
+  {
+    name: "Monolith",
+    description: "Designing maintainable service boundaries.",
+    icon: ServerCog,
+  },
+  {
+    name: "Microservices",
+    description: "Designing maintainable service boundaries.",
+    icon: ServerCog,
+  },
+  {
+    name: "Cloudinary",
+    description: "Designing maintainable service boundaries.",
+    icon: ServerCog,
+  },
+  {
+    name: "AWS",
+    description: "Designing maintainable service boundaries.",
+    icon: ServerCog,
+  },
+  {
+    name: "RabbitMQ",
+    description: "Designing maintainable service boundaries.",
+    icon: ServerCog,
+  },
+  {
+    name: "Springboot",
+    description: "Designing maintainable service boundaries.",
+    icon: ServerCog,
+  },
+  {
+    name: "Gin-Gonic",
     description: "Designing maintainable service boundaries.",
     icon: ServerCog,
   },

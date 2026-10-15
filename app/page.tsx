@@ -1,4 +1,5 @@
 import ContactSection from "@/components/sections/contact-section";
+import EducationSection from "@/components/sections/education-section";
 import ExperienceSection from "@/components/sections/experience-section";
 import HeroSection from "@/components/sections/hero-section";
 import ProjectsSection from "@/components/sections/projects-section";
@@ -27,8 +28,8 @@ export default function Home() {
       </div>
 
       <QuoteSection
-        firstLine="YOU DESCRIBE"
-        secondLine="I ENGINEER"
+        firstLine="EVERY TASK"
+        secondLine="IS A PUZZLE"
         direction="reverse"
         bgClassName="bg-[#AEC4D4]"
         textClassName="text-[#F5EFE1]"
@@ -50,10 +51,21 @@ export default function Home() {
       </div>
 
       <QuoteSection
-        firstLine="YOU DESCRIBE"
-        secondLine="I ENGINEER"
+        firstLine="FIRST PRINCIPLES"
+        secondLine="DEEP ROOTS"
         direction="reverse"
         bgClassName="bg-[#AEC4D4]"
+        textClassName="text-[#F5EFE1]"
+      />
+
+      <div className="mx-auto flex w-full max-w-7xl flex-col px-6 pt-16 sm:px-10 lg:px-12">
+        <EducationSection />
+      </div>
+
+      <QuoteSection
+        firstLine="DURODOLA ABOLAJI"
+        secondLine="TOLIAT"
+        bgClassName="bg-[#790D16]"
         textClassName="text-[#F5EFE1]"
       />
 

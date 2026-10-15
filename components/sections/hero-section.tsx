@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -9,43 +10,69 @@ export default function HeroSection() {
   ] as const;
 
   return (
-    <section className="grid flex-1 items-start gap-12 py-16 lg:grid-cols-[1.2fr_0.8fr] lg:py-20">
-      <div className="max-w-3xl">
-        <h1 className="mt-6 text-5xl font-semibold leading-tight tracking-tight text-balance sm:text-6xl lg:text-7xl">
+    <section className="grid flex-1 items-start gap-12 py-12 lg:grid-cols-[1.25fr_0.75fr] lg:py-16">
+      <div className="flex flex-col">
+        <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.12em] text-[#525252]">
+          <span className="h-2 w-2 bg-[#EF4444]" />
+          <span>LEDE ESSAY // ARCHITECTURE</span>
+        </div>
+
+        <h1 className="mt-4 font-heading text-4xl sm:text-6xl lg:text-[68px] leading-[1.05] tracking-[-0.03em] text-[#0A0A0A] text-balance">
           I design reliable backend systems for products that need to scale
           without drama.
         </h1>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <Button
-            variant="outline"
-            className="border-border/80 bg-transparent text-foreground hover:bg-muted"
-          >
+        <blockquote className="mt-8 border-l-4 border-[#EF4444] pl-6 py-2 font-sans text-lg sm:text-xl font-normal italic leading-[1.65] text-[#0A0A0A]">
+          I focus on APIs, service architecture, data flow, and pragmatic cloud
+          delivery. My work is built for teams that care about maintainability,
+          observability, and shipping real value.
+        </blockquote>
+
+        <div className="mt-8 flex justify-center">
+          <Button variant="default" size="lg">
             Download resume
           </Button>
         </div>
 
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-          I focus on APIs, service architecture, data flow, and pragmatic cloud
-          delivery. My work is built for teams that care about maintainability,
-          observability, and shipping real value.
-        </p>
-
-        
+        <div className="mt-12 grid grid-cols-1 gap-6 border-t-2 border-[#0A0A0A] pt-6 sm:grid-cols-3">
+          {stats.map(([title, description], index) => (
+            <div key={title} className="flex flex-col">
+              <span className="font-mono text-xs font-bold text-[#525252]">
+                {`0${index + 1} //`}
+              </span>
+              <span className="mt-1 font-heading text-lg font-normal text-[#0A0A0A]">
+                {title}
+              </span>
+              <p className="mt-1 font-sans text-xs sm:text-sm leading-6 text-[#525252]">
+                {description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="grid h-full gap-6 self-stretch">
-        <Card className="h-full border-border/70 bg-card/80 shadow-2xl shadow-black/20 backdrop-blur">
-          <CardContent className="pt-6">
-            <div className="flex h-full min-h-136 items-center justify-center border border-border/70 bg-background p-6 text-center">
-              <div>
-                <p className="text-sm uppercase tracking-[0.3em] text-[#8b1e3f]">
-                  Photo placeholder
-                </p>
-                <p className="mt-3 text-sm leading-6 text-muted-foreground">
-                  Replace this block with your portrait image.
-                </p>
-              </div>
+      <div className="h-full">
+        <Card variant="strong" className="h-full bg-[#FAFAFA] p-6 flex flex-col justify-between">
+          <CardContent className="p-0 flex flex-col h-full justify-between">
+            <div className="flex items-center justify-between border-b border-[#E5E5E5] pb-3 text-[11px] font-mono uppercase tracking-[0.12em] text-[#525252]">
+              <span>[ FIG. 01 — ARCHIVE ]</span>
+              <span className="text-[#0A0A0A] font-bold">2026</span>
+            </div>
+
+            <div className="relative my-6 aspect-square w-full overflow-hidden border-2 border-[#0A0A0A] bg-[#FAFAFA]">
+              <Image
+                src="/profilepicture.jpeg"
+                alt="Durodola Abolaji Toliat"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 450px"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="flex items-center justify-between border-t border-[#E5E5E5] pt-3 text-[11px] font-mono text-[#525252]">
+              <span>DURODOLA ABOLAJI TOLIAT</span>
+              <span className="font-bold text-[#0A0A0A]">ACTIVE</span>
             </div>
           </CardContent>
         </Card>

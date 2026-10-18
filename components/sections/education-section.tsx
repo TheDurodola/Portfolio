@@ -15,7 +15,7 @@ const degrees: DegreeItem[] = [
     degree: "Bachelor of Science",
     field: "Computer Science",
     institution: "Bowen University, Iwo.",
-    period: "2019 — 2024",
+    period: "2019 — 2023",
     description:
       "Comprehensive grounding in theoretical computer science, systems programming, data structures, algorithm design, and software architecture.",
     focusAreas: [
@@ -25,13 +25,16 @@ const degrees: DegreeItem[] = [
     ],
     coursework: [
       "Data Structures & Algorithms",
-      "Distributed Systems",
-      "Operating Systems",
-      "Database Systems",
-      "Computer Networks",
-      "Object-Oriented Design",
-      "Software Engineering",
-      "Theory of Computation",
+      "PROGRAMMING IN LOW LEVEL LANGUAGES",
+      "COMPUTER ARCHITECTURE & ORGANIZATION",
+      "SYSTEMS ANALYSIS AND DESIGN",
+      "OBJECT-ORIENTED PROGRAMMING IN JAVA",
+      "FOUNDATIONS OF SEQUENTIAL PROGRAM",
+      "DATA MANAGEMENT",
+      "ALGORITHMS AND COMPLEXITY ANALYSIS",
+      "PROGRAMMING WITH C#", 
+      "NET-CENTRIC COMPUTING", 
+      "HUMAN-COMPUTER INTERFACE", 
     ],
   },
 ];
@@ -39,17 +42,18 @@ const degrees: DegreeItem[] = [
 const technicalStudies = [
   {
     category: "BUSINESS MANAGEMENT",
-    title: "Henley Business School — Management Module",
+    title: "Henley Business School - Management Module",
     description:
-      "Deep-dive studies into cloud primitives, containerization, microservice patterns, message queues, and production deployment safety.",
-    tags: ["Docker", "AWS", "CI/CD", "RabbitMQ", "Microservices"],
+      "Certificate in Business Management, covering core principles of business strategy, leadership, and decision-making in dynamic environments.",
+    tags: [ "Entrepreneurship", "Predictive Logic", 
+      "Business Strategy", "Decision Making", "Leadership", ],
   },
   {
-    category: "DATA & STORAGE",
-    title: "New Horizons ",
+    category: "Computer Skills Aquisition",
+    title: "New Horizons Nigeria",
     description:
-      "Focused exploration of relational and non-relational database internals, index design, ACID guarantees, and caching tiers.",
-    tags: ["PostgreSQL", "MongoDB", "Supabase", "Redis"],
+      "Professional credential validating core competencies in object-oriented Java development, relational database architecture via Oracle SQL, and applied machine learning fundamentals.",
+    tags: ["Java", "Machine Learning", "Oracle SQL", "Excel"],
   },
 ];
 

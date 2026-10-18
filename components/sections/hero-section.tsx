@@ -4,9 +4,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function HeroSection() {
   const stats = [
-    ["Design", "stable contracts and practical service boundaries"],
-    ["Build", "deployment awareness and production readiness"],
-    ["Maintain", "reliable storage, queries, and performance"],
+    ["Design", "architectural blueprints and interaction flows"],
+    ["Build", "systematic implementation and dependable craftsmanship"],
+    ["Maintain", "seamless adaptability and low technical debt"],
   ] as const;
 
   return (
@@ -23,15 +23,16 @@ export default function HeroSection() {
         </h1>
 
         <blockquote className="mt-8 border-l-4 border-[#EF4444] pl-6 py-2 font-sans text-lg sm:text-xl font-normal italic leading-[1.65] text-[#0A0A0A]">
-          I focus on APIs, service architecture, data flow, and pragmatic cloud
-          delivery. My work is built for teams that care about maintainability,
-          observability, and shipping real value.
+          While my passions lie in backend engineering and security, my primary identity is a software engineer built to solve problems anywhere in the stack. 
+          I deliver reliable, observable, and maintainable systems that ship real impact.
         </blockquote>
 
-        <div className="mt-8 flex justify-center">
-          <Button variant="default" size="lg">
+        <div className="mt-8 flex justify-center" >
+          <a href="/cv.pdf" download="Durodola Abolaji Toliat CV" target="_blank" rel="noopener noreferrer">
+          <Button variant="default" size="lg"  >
             Download resume
           </Button>
+        </a>
         </div>
 
         <div className="mt-12 grid grid-cols-1 gap-6 border-t-2 border-[#0A0A0A] pt-6 sm:grid-cols-3">

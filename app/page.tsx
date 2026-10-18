@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
       <QuoteSection
-        firstLine="YOU DESCRIBE"
+        firstLine="YOU IMAGINE"
         secondLine="I ENGINEER"
         bgClassName="bg-[#790D16]"
         textClassName="text-[#F5EFE1]"

@@ -2,22 +2,34 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const projects = [
   {
-    name: "Platform API",
+    name: "Event Registration and Accreditation Platform",
     summary:
-      "A backend service designed for predictable request handling, clean contracts, and long-term maintainability.",
-    tags: ["APIs", "Auth", "Testing"],
+      "Built a multi-category registration platform with webhook-confirmed Naira payments, signed QR badge generation for event check-in, and a self-serve onboarding portal with photo validation and admin approval.",
+    tags: ["Golang", "Supabase", "Gin-gonic", "Paystack", "Next.js", "TailwindCSS" ,"Lucide-react", ],
   },
   {
-    name: "Cloud deployment pipeline",
+    name: "MedCheck",
     summary:
-      "A delivery workflow for shipping backend releases with safer rollouts and clearer operational visibility.",
-    tags: ["CI/CD", "Cloud", "Observability"],
+      "An end-to-end traceability system to combat drug counterfeiting, utilizing unique serialization to track pharmaceutical provenance from the manufacturing plant to the end consumer.",
+    tags: ["Java", "PostgreSQL", "Dart", "Flutter", "Spring Boot", "Next.js", "Monolithic Architecture", "Restful API",],
   },
   {
-    name: "Data-heavy service layer",
+    name: "School Management Portal (ePortal)",
     summary:
-      "A service layer optimized around database access patterns, throughput, and dependable system behavior.",
-    tags: ["Postgres", "Caching", "Performance"],
+      "Built a school management backend with bulk student and staff registration from Excel uploads (Apache POI), validated with Jakarta Bean Validation and returning RFC 9457 error responses through a centralized exception handler.",
+    tags: ["Spring Boot", "MongoDB", "Next.js", "TailwindCSS", "Lucide-react", "Java", "Apache POI", "Jakarta Bean Validation", "Restful API",],
+  },
+  {
+    name: "CampusPlacement",
+    summary:
+      "an end-to-end Scikit-Learn preprocessing pipeline for a 100,000-entry dataset, integrating stratified sampling for balanced target distribution with dynamic feature transformation (ordinal/one-hot encoding and standard scaling) to process mixed data types.",
+    tags: ["Python", "FastAPI", "Machine Learning", "Scikit-Learn", "Pandas", "NumPy", "Streamlit"],
+  },
+  {
+    name: "KutIt",
+    summary:
+      "A collision-resistant URL shortening service by engineering a high-entropy algorithm in Java that utilizes a base-62 alphanumeric character set to generate over 3.5 trillion unique, 7-character identifiers.",
+    tags: ["React + Vite", "Java", "Springboot", "MySQL"],
   },
 ] as const;
 
@@ -33,8 +45,7 @@ export default function ProjectsSection() {
           PROJECTS
         </h2>
         <p className="mt-2 max-w-2xl font-sans text-base leading-7 text-[#525252]">
-          A few examples of the kind of backend and cloud-oriented work I enjoy
-          shipping.
+          A few examples of the kind of projects I enjoy shipping.
         </p>
       </div>
 

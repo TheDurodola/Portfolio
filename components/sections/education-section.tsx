@@ -42,17 +42,17 @@ const degrees: DegreeItem[] = [
 const technicalStudies = [
   {
     category: "BUSINESS MANAGEMENT",
-    title: "Henley Business School",
+    title: "Henley Business School - Management Module",
     description:
-      "Management Module",
-    tags: ["GLOCAL", "VUCA", "Entrepreneurship", "Predictive Logic", 
-      "Business Strategy", "Decision Making", "Leadership", "Business Model"],
+      "Certificate in Business Management, covering core principles of business strategy, leadership, and decision-making in dynamic environments.",
+    tags: [ "Entrepreneurship", "Predictive Logic", 
+      "Business Strategy", "Decision Making", "Leadership", ],
   },
   {
-    category: "DATA & STORAGE",
-    title: "New Horizons",
+    category: "Computer Skills Aquisition",
+    title: "New Horizons Nigeria",
     description:
-      "Professional Certificate on Java Programming, Machine Learning and Oracle SQL Fundamentals",
+      "Professional credential validating core competencies in object-oriented Java development, relational database architecture via Oracle SQL, and applied machine learning fundamentals.",
     tags: ["Java", "Machine Learning", "Oracle SQL", "Excel"],
   },
 ];

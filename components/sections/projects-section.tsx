@@ -22,7 +22,7 @@ const projects = [
   {
     name: "CampusPlacement",
     summary:
-      "an end-to-end Scikit-Learn preprocessing pipeline for a 100,000-entry dataset, integrating stratified sampling for balanced target distribution with dynamic feature transformation (ordinal/one-hot encoding and standard scaling) to process mixed data types.",
+      "An end-to-end Scikit-Learn preprocessing pipeline for a 100,000-entry dataset, integrating stratified sampling for balanced target distribution with dynamic feature transformation (ordinal/one-hot encoding and standard scaling) to process mixed data types.",
     tags: ["Python", "FastAPI", "Machine Learning", "Scikit-Learn", "Pandas", "NumPy", "Streamlit"],
   },
   {

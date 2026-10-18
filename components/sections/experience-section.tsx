@@ -32,6 +32,8 @@ const experiences: ExperienceItem[] = [
     technologies: [
       "Golang",
       "Gin-Gonic",
+      "Java", 
+      "Spring Boot",
       "TypeScript",
       "Next.js",
       "Supabase",

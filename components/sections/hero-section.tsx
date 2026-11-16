@@ -28,7 +28,7 @@ export default function HeroSection() {
         </blockquote>
 
         <div className="mt-8 flex justify-center" >
-          <a href="/cv.pdf" download="Durodola Abolaji Toliat CV" target="_blank" rel="noopener noreferrer">
+          <a href="/curriculum-vitae.pdf" download="Durodola Abolaji Toliat - Software Engineer" target="_blank" rel="noopener noreferrer">
           <Button variant="default" size="lg"  >
             Download resume
           </Button>
